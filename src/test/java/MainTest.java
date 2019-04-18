@@ -9,11 +9,7 @@ public class MainTest {
     public void test() {
         String[] a = {"az", "toto", "picaro", "zone", "kiwi"};
         String[][] result = {{"az", "toto picaro zone kiwi"}, {"az toto", "picaro zone kiwi"}, {"az toto picaro", "zone kiwi"}, {"az toto picaro zone", "kiwi"}};
-        assertArrayEquals( result  ,Main.partlist(a));
+        assertArrayEquals( result, Main.partlist(a));
     }
-
-
-
-
 
 }
