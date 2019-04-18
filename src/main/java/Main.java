@@ -1,5 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
 
 public class Main {
 
@@ -12,11 +10,14 @@ public class Main {
             temp[0]= "";
             temp[1]= "";
             for ( int i =0; i <= counter; i++ ){
-                temp[0] = temp[0] + arr[i] + " ";
+                temp[0] = (temp[0] + arr[i] + " ");
             }
             for ( int j =counter+1; j < arr.length; j++ ){
                 temp[1] = temp[1] + arr[j] + " ";
             }
+            temp[0]= temp[0].substring(0,temp[0].length()-1);
+            temp[1]= temp[1].substring(0,temp[1].length()-1);
+
             result[counter] = temp;
             counter++;
         }
@@ -24,19 +25,7 @@ public class Main {
     }
 
 
-    public static void main(String[] args) {
 
-        String[] a = {"az", "toto", "picaro", "zone", "kiwi"};
-
-
-        Arrays.asList( partlist(a) ).stream()
-                .forEach( n-> System.out.println(n[0] + " +  " + n[1] )  );
-
-
-
-
-
-    }
 
 
 
