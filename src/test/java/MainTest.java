@@ -20,4 +20,13 @@ public class MainTest {
     }
 
 
+    @Test
+    public void test3() {
+        String[] a = {"a", "b",};
+        String[][] result = {{"a", "b"}};
+        assertArrayEquals(result, Main.partlist(a));
+
+    }
+
+
 }
