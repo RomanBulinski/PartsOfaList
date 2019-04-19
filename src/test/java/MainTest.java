@@ -10,15 +10,13 @@ public class MainTest {
         String[][] result = {{"az", "toto picaro zone kiwi"}, {"az toto", "picaro zone kiwi"}, {"az toto picaro", "zone kiwi"}, {"az toto picaro zone", "kiwi"}};
         assertArrayEquals( result, Main.partlist(a));
     }
-
-
+    
     @Test
     public void test2() {
         String[] a = {"a", "b", "c"};
         String[][] result = { {"a", "b c"}, {"a b", "c"} };
         assertArrayEquals( result, Main.partlist(a));
     }
-
 
     @Test
     public void test3() {
@@ -27,6 +25,5 @@ public class MainTest {
         assertArrayEquals(result, Main.partlist(a));
 
     }
-
 
 }
