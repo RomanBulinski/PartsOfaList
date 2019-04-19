@@ -1,7 +1,6 @@
 
 public class Main {
 
-
     public static String[][] partlist(String[] arr) {
         String[][] result = new String[arr.length - 1][];
         int counter = 0;
@@ -23,5 +22,4 @@ public class Main {
         }
         return result;
     }
-
 }
